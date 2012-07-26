@@ -1,0 +1,5 @@
+0.0.1
+ - Project initialized.
+ - Created Mongoose's schema for cards.
+ - Created basic structure for getting cards.
+ - Created basic setup.

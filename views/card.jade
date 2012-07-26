@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  .card-container
+    h2.title= card.word
+    ul.tabus
+      each tabu, i in card.tabues
+        li.item=tabu

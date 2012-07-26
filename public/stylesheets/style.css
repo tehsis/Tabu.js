@@ -1,0 +1,29 @@
+.rounded {
+  border-radius: 10px;
+}
+body {
+  font: 4px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+a {
+  color: #00B7FF;
+}
+#container {
+  margin: 0 auto 0 auto;
+  width: 72.5em;
+}
+#container .card-container {
+  border-radius: 10px;
+  width: 72.5em;
+  height: 76em;
+  background-color: blue;
+}
+#container .card-container h2.title {
+  text-align: center;
+  color: #ff0000;
+  font-size: 12em;
+}
+ul.tabus {
+  font-size: 10em;
+  text-align: justify;
+  list-style: none;
+}
