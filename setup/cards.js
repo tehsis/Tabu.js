@@ -5,11 +5,11 @@
 
 var cards = [
 	{
-		word  : "Bombero"
+            word  : "Bombero"
 	  , tabues : ["Fuego", "Manguera", "Camion", "Sirena"]
 	},
 	{
-		word  : "Gato"
+            word  : "Gato"
 	  , tabues : ["Mascota", "Tierno", "Lana", "Michi"]
 	}
 ];
