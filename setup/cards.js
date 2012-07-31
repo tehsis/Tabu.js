@@ -59,7 +59,7 @@ var cards = [
 	{
             word  : "Positivo"
 	  , tabues : ["Resultado", "Si", "Mas", "Negativo", "Signo"]
-	}
+	},
 	{
             word  : "Diamante"
 	  , tabues : ["Duro", "Kilates", "Joyas", "Brillante", "Piedra"]
