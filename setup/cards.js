@@ -283,6 +283,26 @@ var cards = [
 	{
             word  : "Sherlock Holmes"
 	  , tabues : ["Watson", "Detective", "Lupa", "Pipa", "Inglés"]
+	},
+	{
+            word  : "Kamikaze"
+	  , tabues : ["Guerra", "Suicidó", "Piloto", "Japonés", "Aviador"]
+	},
+	{
+            word  : "Terraza"
+	  , tabues : ["Arriba", "Plantas", "Sol", "Techo", "Ropa"]
+	},
+	{
+            word  : "Olímpico"
+	  , tabues : ["Atletas", "Medallas", "Juegos", "Competición", "Países"]
+	},
+	{
+            word  : "Ametralladora"
+	  , tabues : ["Arma", "Automático", "Disparar", "Balas", "Gatillo"]
+	},
+	{
+            word  : "Cáscara"
+	  , tabues : ["Banana", "Recubrimiento", "Envoltura", "Naranja", "Piel"]
 	}
 ];
 
