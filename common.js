@@ -1,7 +1,5 @@
 var express = require('express')
   , http = require('http')
-  , controllers = require('./controllers');
-  
 var app = module.exports = express.createServer();
 
 app.configure(function(){
@@ -26,13 +24,3 @@ app.configure('development', function(){
     db   : "tabu"
   })
 });
-
-var i;
-for (controller in controllers) {
-	for (action in controllers[controller]) {
-    	if (action === "index") {
-    	  app.get('/' + controller, controllers[controller][action]);	
-    	}
-    	app.get('/' + controller + '/' + action, controllers[controller][action]);
-	}
-}
