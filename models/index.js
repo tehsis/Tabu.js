@@ -4,7 +4,7 @@
 
 var mongoose = require('mongoose')
   , schemas = require('./schemas/cards.js')
-  , app = require('../app')
+  , app = require('../common')
   , mongodb = app.get('mongodb');
 
 mongoose.connect(mongodb.url, mongodb.db, mongodb.port);

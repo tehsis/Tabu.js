@@ -1,6 +1,6 @@
 var express = require('express')
-  , routes = require('./routes')
-  , http = require('http');
+  , http = require('http')
+  , controllers = require('./controllers');
   
 var app = module.exports = express.createServer();
 
@@ -27,5 +27,12 @@ app.configure('development', function(){
   })
 });
 
-app.get('/', routes.index);
-app.get('/card', routes.card);
+var i;
+for (controller in controllers) {
+	for (action in controllers[controller]) {
+    	if (action === "index") {
+    	  app.get('/' + controller, controllers[controller][action]);	
+    	}
+    	app.get('/' + controller + '/' + action, controllers[controller][action]);
+	}
+}
