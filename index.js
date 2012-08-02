@@ -6,6 +6,8 @@
 var app = require('./common.js');
 var components = require('./components');
 
+
+// Creates the routes based on the defined controllers.
 components.router.route();
 
 app.listen(app.get('port'), function(){
