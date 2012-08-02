@@ -25,10 +25,10 @@ for(i = 0; i<preloaded_cards.length; i++) {
 		if (err !== null) {
 		  console.log(err);	
 		}
-		
+
 		if (i >= preloaded_cards.length-1) {
-          console.log("Data inserted sucessfully.");
-          process.exit();
+            console.log("Data inserted sucessfully.");
+            process.exit();
 		};
 		
 	}); 	
