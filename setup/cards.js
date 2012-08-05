@@ -463,8 +463,139 @@ var cards = [
 	{
             word  : "Calavera"
 	  , tabues : ["Cráneo", "Pirata", "Hamlet", "Huesos", "Cabeza"]
+	},
+	{
+            word  : "Boleadoras"
+	  , tabues : ["Cazar", "Caballo", "Lanzar", "Indios", "Avestruz"]
+	},
+	{
+            word  : "Oro"
+	  , tabues : ["Dientes", "Metal Precioso", "Kilate", "Anillo", "Caro"]
+	},
+	{
+            word  : "Ladrillo"
+	  , tabues : ["Construir", "Casa", "Barro", "Edificio", "Obra"]
+	},
+	{
+            word  : "Corazón"
+	  , tabues : ["Rojo", "Amor", "Músculo", "Sangre", "Latir"]
+	},
+	{
+            word  : "Teléfono"
+	  , tabues : ["Número", "Llamar", "Personal", "Tono", "Ocupado"]
+	},
+	{
+            word  : "Tesoro"
+	  , tabues : ["Piratas", "Mapa", "Cofre", "Oro", "Isla"]
+	},
+	{
+            word  : "Elegante"
+	  , tabues : ["Atractivo", "Aspecto", "Encantador", "Bien Vestido", "Ropa"]
+	},
+	{
+            word  : "Loco"
+	  , tabues : ["Enojado", "Furioso", "Demente", "Trastornado", "Manicomio"]
+	},
+	{
+            word  : "Escalera"
+	  , tabues : ["Peldaño", "Ascensor", "Bajar", "Subir", "Baranda"]
+	},
+	{
+            word  : "Angel"
+	  , tabues : ["Paraiso", "Diablo", "Demonio", "Cielo", "Alas"]
+	},
+	{
+            word  : "Futbol"
+	  , tabues : ["Maradona", "Deporte", "Arco", "Gol", "Pelota"]
+	},
+	{
+            word  : "Lapicera"
+	  , tabues : ["Escribir", "Birome", "Papel", "Tinta", "Cartucho"]
+	},
+	{
+            word  : "Costillas"
+	  , tabues : ["Esqueleto", "Espalda", "Huesos", "Pecho", "Cuerpo"]
+	},
+	{
+            word  : "Furgón de Cola"
+	  , tabues : ["Final", "Vagón", "Locomotora", "Tren", "Último"]
+	},
+	{
+            word  : "Kremlin"
+	  , tabues : ["Moscú", "URSS", "Palacio", "Rusia", "Plaza Roja"]
+	},
+	{
+            word  : "Carnicero"
+	  , tabues : ["Vender", "Vaca", "Comprar", "Asado", "Mercado"]
+	},
+	{
+            word  : "Ruleta"
+	  , tabues : ["Números", "Bolita", "Negro", "Rojo", "Casino"]
+	},
+	{
+            word  : "Anzuelo"
+	  , tabues : ["Caña", "Pescador", "Tirar", "Cebo", "Lombriz"]
+	},
+	{
+            word  : "Cuerpo Humano"
+	  , tabues : ["Anatomía", "Piernas", "Esqueleto", "Cadáver", "Músculos"]
+	},
+	{
+            word  : "Campo"
+	  , tabues : ["Cultivar", "Ciudad", "Gaucho", "Vacas", "Rural"]
+	},
+	{
+            word  : "Comisaría"
+	  , tabues : ["Patrullero", "Policía", "Detenerte", "Barrio", "Calabozo"]
+	},
+	{
+            word  : "Compact Disc"
+	  , tabues : ["Escuchar", "Láser", "Canción", "Casette", "Música"]
+	},
+	{
+            word  : "Carlos Menem"
+	  , tabues : ["Presidente", "La Rioja", "Patillas", "Zulema Yoma", "Argentina"]
+	},
+	{
+            word  : "Oficial de Policía"
+	  , tabues : ["Esposas", "Agente", "Patrullero", "Comisaría", "Arrestar"]
+	},
+	{
+            word  : "Dentista"
+	  , tabues : ["Boca", "Caries", "Torno", "Anestesia", "Muelas"]
+	},
+	{
+            word  : "Poker"
+	  , tabues : ["Apostar", "Naipes", "Juego", "Baraja", "Cartas"]
+	},
+	{
+            word  : "Colectivo"
+	  , tabues : ["Boleto", "Viajar", "Línea", "Bondi", "Micro"]
+	},
+	{
+            word  : "Teja"
+	  , tabues : ["Casa", "Rojo", "Lluvia", "Techo", "Cubrir"]
+	},
+	{
+            word  : "Cataratas del Iguazú"
+	  , tabues : ["Agua", "Argentina", "Misiones", "Turistas", "Cascada"]
+	},
+	{
+            word  : "Almohada"
+	  , tabues : ["Cama", "Dormir", "Pluma", "Acostarse", "Cabeza"]
+	},
+	{
+            word  : "Quini 6"
+	  , tabues : ["Juego", "Loto", "Apuesta", "Números", "Agencia"]
+	},
+	{
+            word  : "Revolución"
+	  , tabues : ["De Mayo", "Francesa", "Movimiento", "Sublemación", "Levantamiendo"]
+	},
+	{
+            word  : "Billiken"
+	  , tabues : ["Anteojito", "Revista", "Infantil", "Quiosco", "Niños"]
 	}
-	
 ];
 
 exports.cards = cards;
