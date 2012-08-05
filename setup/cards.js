@@ -387,7 +387,84 @@ var cards = [
 	{
             word  : "Jarrón"
 	  , tabues : ["Flores", "Agua", "Adorno", "Porcelana", "Cristal"]
+	},
+	{
+            word  : "Lluvia"
+	  , tabues : ["Agua", "Caer", "Paraguas", "Tiempo", "Mojar"]
+	},
+	{
+            word  : "Carpeta"
+	  , tabues : ["Cuaderno", "Hojas", "Tapas", "Forro", "Colegio"]
+	},
+	{
+            word  : "Nesquik"
+	  , tabues : ["Cacao", "Polvo", "Chocolate", "Merienda", "Leche"]
+	},
+	{
+            word  : "Carnada"
+	  , tabues : ["Cebo", "Caña", "Anzuelo", "Pescar", "Lombriz"]
+	},
+	{
+            word  : "Uniforme"
+	  , tabues : ["Vestido", "Igual", "Colegio", "Ejército", "Policía"]
+	},
+	{
+            word  : "Cirujano"
+	  , tabues : ["Hospital", "Anestecia", "Operación", "Doctor", "Escalpelo"]
+	},
+	{
+            word  : "Emergencia"
+	  , tabues : ["Ambulancia", "Urgencia", "S.O.S.", "Llamada", "Accidente"]
+	},
+	{
+            word  : "Cara"
+	  , tabues : ["Frente", "Boca", "Ojos", "Cabeza", "Nariz"]
+	},
+	{
+            word  : "Coca-Cola"
+	  , tabues : ["Bebida", "Gaseosa", "Marca", "Tomar", "Pemsi"]
+	},
+	{
+            word  : "Reloj"
+	  , tabues : ["Hora", "Tiempo", "Despertador", "Muñeca", "Agujas"]
+	},
+	{
+            word  : "Otoño"
+	  , tabues : ["Mes", "Estación", "Hojas", "Verano", "Invierno"]
+	},
+	{
+            word  : "Ventilador"
+	  , tabues : ["Aire", "Techo", "Verano", "Aspas", "Girar"]
+	},
+	{
+            word  : "shell"
+	  , tabues : ["Nafta", "Combustible", "Lubricante", "Estación de Servicio", "ESSO"]
+	},
+	{
+            word  : "Paisaje"
+	  , tabues : ["Viaje", "Campo", "Panorama", "Horizonte", "Vista"]
+	},
+	{
+            word  : "Ladrón"
+	  , tabues : ["Robar", "Asalto", "Arma", "Banco", "Delincuente"]
+	},
+	{
+            word  : "Amarillo"
+	  , tabues : ["Banana", "Sol", "Color", "Limón", "Oro"]
+	},
+	{
+            word  : "Jardín"
+	  , tabues : ["Botánico", "Pasto", "Japonés", "Flores", "Plantas"]
+	},
+	{
+            word  : "Alarma"
+	  , tabues : ["Robo", "Casa", "Banco", "Atraco", "Ladrón"]
+	},
+	{
+            word  : "Calavera"
+	  , tabues : ["Cráneo", "Pirata", "Hamlet", "Huesos", "Cabeza"]
 	}
+	
 ];
 
 exports.cards = cards;
