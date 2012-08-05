@@ -303,6 +303,90 @@ var cards = [
 	{
             word  : "Cáscara"
 	  , tabues : ["Banana", "Recubrimiento", "Envoltura", "Naranja", "Piel"]
+	},
+	{
+            word  : "Regalo"
+	  , tabues : ["Cumpleaños", "Dar", "Navidad", "Presente", "Obsequio"]
+	},
+	{
+            word  : "Desierto"
+	  , tabues : ["Oasis", "Arena", "Sol", "Sahara", "Espejismo"]
+	},
+	{
+            word  : "Enfermera"
+	  , tabues : ["Doctor", "Consultorio", "Médico", "Hospital", "Blanco"]
+	},
+	{
+            word  : "Taxi"
+	  , tabues : ["Reloj", "Ficha", "Coche", "Alquiler", "Amarillo"]
+	},
+	{
+            word  : "Elefante"
+	  , tabues : ["Marfil", "África", "Trompa", "Colmillo", "Dumbo"]
+	},
+	{
+            word  : "Velocímetro"
+	  , tabues : ["Auto", "R.P.M.", "Reloj", "Tacómetro", "Aguja"]
+	},
+	{
+            word  : "Escarbadientes"
+	  , tabues : ["Madera", "Palito", "Aperitivo", "Boca", "Hilo Dental"]
+	},
+	{
+            word  : "Reina"
+	  , tabues : ["Corona", "Monarquía", "Príncipe", "Inglaterra", "Mujer"]
+	},
+	{
+            word  : "Búfalo"
+	  , tabues : ["Animal", "Buey", "Bisonte", "Idios", "Oeste"]
+	},
+	{
+            word  : "Tomate"
+	  , tabues : ["Rojo", "Verdura", "Perita", "Salsa", "Pizza"]
+	},
+	{
+            word  : "Nafta"
+	  , tabues : ["Combustible", "Surtidor", "Auto", "Tanque", "Estación"]
+	},
+	{
+            word  : "Pronóstico"
+	  , tabues : ["Predicción", "Nublado", "Lluvia", "Temperatura", "Tiempo"]
+	},
+	{
+            word  : "Skate"
+	  , tabues : ["Patineta", "Monopatín", "Cuatro", "Ruedas", "Tabla"]
+	},
+	{
+            word  : "Ataud"
+	  , tabues : ["Cajón", "Muerto", "Enterrar", "Cementerio", "Velorio"]
+	},
+	{
+            word  : "Peluquero"
+	  , tabues : ["Afeitar", "Cabello", "Cortar", "Bigotes", "Tijeras"]
+	},
+	{
+            word  : "Inyección"
+	  , tabues : ["Jeringa", "Aguja", "Pinchar", "Cola", "Dolor"]
+	},
+	{
+            word  : "Lanzar"
+	  , tabues : ["Pelota", "Jabalina", "Tirar", "Echar", "Arrojar"]
+	},
+	{
+            word  : "Clemente"
+	  , tabues : ["Mulatona", "Brazos", "Caloy", "Clarín", "Chiste"]
+	},
+	{
+            word  : "Kodak"
+	  , tabues : ["Cámara", "Fotografía", "Film", "Marca", "Revelar"]
+	},
+	{
+            word  : "Soldado"
+	  , tabues : ["Conscripto", "Guerra", "Militar", "Colimba", "Ejércitos"]
+	},
+	{
+            word  : "Jarrón"
+	  , tabues : ["Flores", "Agua", "Adorno", "Porcelana", "Cristal"]
 	}
 ];
 
