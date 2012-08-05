@@ -303,6 +303,298 @@ var cards = [
 	{
             word  : "Cáscara"
 	  , tabues : ["Banana", "Recubrimiento", "Envoltura", "Naranja", "Piel"]
+	},
+	{
+            word  : "Regalo"
+	  , tabues : ["Cumpleaños", "Dar", "Navidad", "Presente", "Obsequio"]
+	},
+	{
+            word  : "Desierto"
+	  , tabues : ["Oasis", "Arena", "Sol", "Sahara", "Espejismo"]
+	},
+	{
+            word  : "Enfermera"
+	  , tabues : ["Doctor", "Consultorio", "Médico", "Hospital", "Blanco"]
+	},
+	{
+            word  : "Taxi"
+	  , tabues : ["Reloj", "Ficha", "Coche", "Alquiler", "Amarillo"]
+	},
+	{
+            word  : "Elefante"
+	  , tabues : ["Marfil", "África", "Trompa", "Colmillo", "Dumbo"]
+	},
+	{
+            word  : "Velocímetro"
+	  , tabues : ["Auto", "R.P.M.", "Reloj", "Tacómetro", "Aguja"]
+	},
+	{
+            word  : "Escarbadientes"
+	  , tabues : ["Madera", "Palito", "Aperitivo", "Boca", "Hilo Dental"]
+	},
+	{
+            word  : "Reina"
+	  , tabues : ["Corona", "Monarquía", "Príncipe", "Inglaterra", "Mujer"]
+	},
+	{
+            word  : "Búfalo"
+	  , tabues : ["Animal", "Buey", "Bisonte", "Idios", "Oeste"]
+	},
+	{
+            word  : "Tomate"
+	  , tabues : ["Rojo", "Verdura", "Perita", "Salsa", "Pizza"]
+	},
+	{
+            word  : "Nafta"
+	  , tabues : ["Combustible", "Surtidor", "Auto", "Tanque", "Estación"]
+	},
+	{
+            word  : "Pronóstico"
+	  , tabues : ["Predicción", "Nublado", "Lluvia", "Temperatura", "Tiempo"]
+	},
+	{
+            word  : "Skate"
+	  , tabues : ["Patineta", "Monopatín", "Cuatro", "Ruedas", "Tabla"]
+	},
+	{
+            word  : "Ataud"
+	  , tabues : ["Cajón", "Muerto", "Enterrar", "Cementerio", "Velorio"]
+	},
+	{
+            word  : "Peluquero"
+	  , tabues : ["Afeitar", "Cabello", "Cortar", "Bigotes", "Tijeras"]
+	},
+	{
+            word  : "Inyección"
+	  , tabues : ["Jeringa", "Aguja", "Pinchar", "Cola", "Dolor"]
+	},
+	{
+            word  : "Lanzar"
+	  , tabues : ["Pelota", "Jabalina", "Tirar", "Echar", "Arrojar"]
+	},
+	{
+            word  : "Clemente"
+	  , tabues : ["Mulatona", "Brazos", "Caloy", "Clarín", "Chiste"]
+	},
+	{
+            word  : "Kodak"
+	  , tabues : ["Cámara", "Fotografía", "Film", "Marca", "Revelar"]
+	},
+	{
+            word  : "Soldado"
+	  , tabues : ["Conscripto", "Guerra", "Militar", "Colimba", "Ejércitos"]
+	},
+	{
+            word  : "Jarrón"
+	  , tabues : ["Flores", "Agua", "Adorno", "Porcelana", "Cristal"]
+	},
+	{
+            word  : "Lluvia"
+	  , tabues : ["Agua", "Caer", "Paraguas", "Tiempo", "Mojar"]
+	},
+	{
+            word  : "Carpeta"
+	  , tabues : ["Cuaderno", "Hojas", "Tapas", "Forro", "Colegio"]
+	},
+	{
+            word  : "Nesquik"
+	  , tabues : ["Cacao", "Polvo", "Chocolate", "Merienda", "Leche"]
+	},
+	{
+            word  : "Carnada"
+	  , tabues : ["Cebo", "Caña", "Anzuelo", "Pescar", "Lombriz"]
+	},
+	{
+            word  : "Uniforme"
+	  , tabues : ["Vestido", "Igual", "Colegio", "Ejército", "Policía"]
+	},
+	{
+            word  : "Cirujano"
+	  , tabues : ["Hospital", "Anestecia", "Operación", "Doctor", "Escalpelo"]
+	},
+	{
+            word  : "Emergencia"
+	  , tabues : ["Ambulancia", "Urgencia", "S.O.S.", "Llamada", "Accidente"]
+	},
+	{
+            word  : "Cara"
+	  , tabues : ["Frente", "Boca", "Ojos", "Cabeza", "Nariz"]
+	},
+	{
+            word  : "Coca-Cola"
+	  , tabues : ["Bebida", "Gaseosa", "Marca", "Tomar", "Pemsi"]
+	},
+	{
+            word  : "Reloj"
+	  , tabues : ["Hora", "Tiempo", "Despertador", "Muñeca", "Agujas"]
+	},
+	{
+            word  : "Otoño"
+	  , tabues : ["Mes", "Estación", "Hojas", "Verano", "Invierno"]
+	},
+	{
+            word  : "Ventilador"
+	  , tabues : ["Aire", "Techo", "Verano", "Aspas", "Girar"]
+	},
+	{
+            word  : "shell"
+	  , tabues : ["Nafta", "Combustible", "Lubricante", "Estación de Servicio", "ESSO"]
+	},
+	{
+            word  : "Paisaje"
+	  , tabues : ["Viaje", "Campo", "Panorama", "Horizonte", "Vista"]
+	},
+	{
+            word  : "Ladrón"
+	  , tabues : ["Robar", "Asalto", "Arma", "Banco", "Delincuente"]
+	},
+	{
+            word  : "Amarillo"
+	  , tabues : ["Banana", "Sol", "Color", "Limón", "Oro"]
+	},
+	{
+            word  : "Jardín"
+	  , tabues : ["Botánico", "Pasto", "Japonés", "Flores", "Plantas"]
+	},
+	{
+            word  : "Alarma"
+	  , tabues : ["Robo", "Casa", "Banco", "Atraco", "Ladrón"]
+	},
+	{
+            word  : "Calavera"
+	  , tabues : ["Cráneo", "Pirata", "Hamlet", "Huesos", "Cabeza"]
+	},
+	{
+            word  : "Boleadoras"
+	  , tabues : ["Cazar", "Caballo", "Lanzar", "Indios", "Avestruz"]
+	},
+	{
+            word  : "Oro"
+	  , tabues : ["Dientes", "Metal Precioso", "Kilate", "Anillo", "Caro"]
+	},
+	{
+            word  : "Ladrillo"
+	  , tabues : ["Construir", "Casa", "Barro", "Edificio", "Obra"]
+	},
+	{
+            word  : "Corazón"
+	  , tabues : ["Rojo", "Amor", "Músculo", "Sangre", "Latir"]
+	},
+	{
+            word  : "Teléfono"
+	  , tabues : ["Número", "Llamar", "Personal", "Tono", "Ocupado"]
+	},
+	{
+            word  : "Tesoro"
+	  , tabues : ["Piratas", "Mapa", "Cofre", "Oro", "Isla"]
+	},
+	{
+            word  : "Elegante"
+	  , tabues : ["Atractivo", "Aspecto", "Encantador", "Bien Vestido", "Ropa"]
+	},
+	{
+            word  : "Loco"
+	  , tabues : ["Enojado", "Furioso", "Demente", "Trastornado", "Manicomio"]
+	},
+	{
+            word  : "Escalera"
+	  , tabues : ["Peldaño", "Ascensor", "Bajar", "Subir", "Baranda"]
+	},
+	{
+            word  : "Angel"
+	  , tabues : ["Paraiso", "Diablo", "Demonio", "Cielo", "Alas"]
+	},
+	{
+            word  : "Futbol"
+	  , tabues : ["Maradona", "Deporte", "Arco", "Gol", "Pelota"]
+	},
+	{
+            word  : "Lapicera"
+	  , tabues : ["Escribir", "Birome", "Papel", "Tinta", "Cartucho"]
+	},
+	{
+            word  : "Costillas"
+	  , tabues : ["Esqueleto", "Espalda", "Huesos", "Pecho", "Cuerpo"]
+	},
+	{
+            word  : "Furgón de Cola"
+	  , tabues : ["Final", "Vagón", "Locomotora", "Tren", "Último"]
+	},
+	{
+            word  : "Kremlin"
+	  , tabues : ["Moscú", "URSS", "Palacio", "Rusia", "Plaza Roja"]
+	},
+	{
+            word  : "Carnicero"
+	  , tabues : ["Vender", "Vaca", "Comprar", "Asado", "Mercado"]
+	},
+	{
+            word  : "Ruleta"
+	  , tabues : ["Números", "Bolita", "Negro", "Rojo", "Casino"]
+	},
+	{
+            word  : "Anzuelo"
+	  , tabues : ["Caña", "Pescador", "Tirar", "Cebo", "Lombriz"]
+	},
+	{
+            word  : "Cuerpo Humano"
+	  , tabues : ["Anatomía", "Piernas", "Esqueleto", "Cadáver", "Músculos"]
+	},
+	{
+            word  : "Campo"
+	  , tabues : ["Cultivar", "Ciudad", "Gaucho", "Vacas", "Rural"]
+	},
+	{
+            word  : "Comisaría"
+	  , tabues : ["Patrullero", "Policía", "Detenerte", "Barrio", "Calabozo"]
+	},
+	{
+            word  : "Compact Disc"
+	  , tabues : ["Escuchar", "Láser", "Canción", "Casette", "Música"]
+	},
+	{
+            word  : "Carlos Menem"
+	  , tabues : ["Presidente", "La Rioja", "Patillas", "Zulema Yoma", "Argentina"]
+	},
+	{
+            word  : "Oficial de Policía"
+	  , tabues : ["Esposas", "Agente", "Patrullero", "Comisaría", "Arrestar"]
+	},
+	{
+            word  : "Dentista"
+	  , tabues : ["Boca", "Caries", "Torno", "Anestesia", "Muelas"]
+	},
+	{
+            word  : "Poker"
+	  , tabues : ["Apostar", "Naipes", "Juego", "Baraja", "Cartas"]
+	},
+	{
+            word  : "Colectivo"
+	  , tabues : ["Boleto", "Viajar", "Línea", "Bondi", "Micro"]
+	},
+	{
+            word  : "Teja"
+	  , tabues : ["Casa", "Rojo", "Lluvia", "Techo", "Cubrir"]
+	},
+	{
+            word  : "Cataratas del Iguazú"
+	  , tabues : ["Agua", "Argentina", "Misiones", "Turistas", "Cascada"]
+	},
+	{
+            word  : "Almohada"
+	  , tabues : ["Cama", "Dormir", "Pluma", "Acostarse", "Cabeza"]
+	},
+	{
+            word  : "Quini 6"
+	  , tabues : ["Juego", "Loto", "Apuesta", "Números", "Agencia"]
+	},
+	{
+            word  : "Revolución"
+	  , tabues : ["De Mayo", "Francesa", "Movimiento", "Sublemación", "Levantamiendo"]
+	},
+	{
+            word  : "Billiken"
+	  , tabues : ["Anteojito", "Revista", "Infantil", "Quiosco", "Niños"]
 	}
 ];
 
