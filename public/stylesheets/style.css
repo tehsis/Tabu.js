@@ -4198,3 +4198,51 @@ a.badge:hover {
 .invisible {
   visibility: hidden;
 }
+body {
+  font-size: 12px;
+}
+#card {
+  border-radius: 10px;
+  border: 2px solid #000000;
+  text-align: center;
+  box-shadow: 6px 5px 18px -3px;
+  width: 27em;
+  height: 33em;
+  background-color: #ffc4b2;
+}
+#card .card-word {
+  background-color: #D4CDF9;
+}
+#card ul.card-tabues {
+  list-style: none;
+}
+#card ul.card-tabues li.tabu {
+  line-height: 2em;
+  font-size: 3em;
+}
+.score.ng-binding {
+  font-size: 8em;
+  clear: both;
+  padding-top: 50px;
+}
+.buttons {
+  width: 316px;
+  margin-top: 30px;
+}
+.buttons .newCard-button {
+  background-image: url("/img/Crystal_Clear_action_button_cancel.png");
+  width: 128px;
+  height: 128px;
+  display: block;
+  text-indent: -30000em;
+  float: left;
+}
+.buttons .correct-button {
+  background-image: url("/img/Crystal_Clear_action_apply.png");
+  width: 128px;
+  height: 128px;
+  display: block;
+  text-indent: -30000em;
+  float: left;
+  margin-left: 60px;
+}

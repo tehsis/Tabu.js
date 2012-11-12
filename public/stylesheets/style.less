@@ -1,1 +1,65 @@
 @import './bootstrap/less/bootstrap.less';
+
+body {
+  font-size: 12px;
+}
+
+.rounded(@radius: 10px) {
+  border-radius: @radius;
+}
+
+.solid-border(@size: 2px, @color: #bada55) {
+  border: @size solid @color;
+}
+
+#card {
+  .rounded;
+  .solid-border(2px, #000000);
+  text-align: center;
+  box-shadow: 6px 5px 18px -3px;  
+  width: 27em;
+  height: 33em;
+  background-color: #ffc4b2;
+  .card-word {
+      background-color: #D4CDF9;
+  }
+  ul.card-tabues {
+    list-style: none; 
+    li.tabu {  
+        line-height: 2em;
+        font-size: 3em;
+    }
+  }   
+
+} 
+
+.button(@url) {
+    background-image: url(@url);
+    width: 128px;
+    height: 128px;
+    display: block;
+    text-indent: -30000em;
+    float: left;
+}
+
+
+.score.ng-binding {
+    font-size: 8em;
+    clear: both;
+    padding-top: 50px;
+}
+
+
+.buttons {
+  width: 316px;
+  margin-top: 30px;
+  .newCard-button {
+    .button("/img/Crystal_Clear_action_button_cancel.png");
+  }
+
+  .correct-button {
+    .button("/img/Crystal_Clear_action_apply.png");
+    margin-left: 60px;
+  }
+}
+

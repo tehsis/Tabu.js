@@ -1,0 +1,15 @@
+extends ../layout
+
+block content
+  .card-container.row
+    .span12
+       h1.title= card.word
+       ul.tabus.unstyled
+         each tabu, i in card.tabues
+           li.item=tabu
+       .row
+         .span4
+           button.btn.btn-large.btn-success Sucess
+         .span4
+           button.btn.btn-large.btn-danger  Wrong
+         
