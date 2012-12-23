@@ -1,20 +1,17 @@
 extends ../layout
 
 block content
-  .container(ng-controller="cardController")
     #card
-      h2.card-word {{card.word}}
-      ul.card-tabues
-        li.tabu(ng-repeat="tabu in card.tabues")
-          | {{tabu}}
+      h2.card-word <%= word %>
     .buttons
-      a.newCard-button(ng-click="next()") Give me other!
-      a.correct-button(ng-click="correct()") correct!
+      a.newCard-button Give me other!
+      a.correct-button correct!
     .score
       {{score}}
 
 
 block scripts
-  script(language="javascript", src="/javascripts/jquery-1.7.2.js")
-  script(language="javascript", src="/javascripts/angular-1.0.1.js")
-  script(language="javascript", src="/javascripts/card-controller.js")
+  script(language="javascript", src="/javascripts/libs/underscore.js")
+  script(language="javascript", src="/javascripts/libs/zepto.js")
+  script(language="javascript", src="/javascripts/libs/backbone.js")
+  script(language="javascript", src="/javascripts/tabu.js")

@@ -1,6 +1,6 @@
 # Changelog
 ## 0.0.2
- * Added an automatic router to create routes based on controllers
+ * Added an automatic router to create routes based on defined controllers
  * Added Angular.js
  * Added Twitter's Bootstrap styles
 ## 0.0.1

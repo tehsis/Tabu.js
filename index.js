@@ -8,8 +8,10 @@ var components = require('./components');
 
 
 // Creates the routes based on the defined controllers.
-components.router.route();
+components.router.route({
+	index: ["game", "index"]
+});
 
 app.listen(app.get('port'), function(){
-  console.log("Express server listening on port " + app.get('port'));
+  console.log("Tabu server listening on port " + app.get('port'));
 });

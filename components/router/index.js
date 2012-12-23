@@ -8,14 +8,14 @@ var app = require('../../common.js');
  */
 exports.route = function(options) {
   var i;
+  
+  var options = options || {};
  
- /* 
   if (options.index !== undefined) {
   	var controller = options.index[0];
   	var action = options.index[1];
     app.get('/', controllers[controller][action]);	
   } 
-  */
   
   for (controller_name in controllers) {
   	for (action_name in controllers[controller_name]) {
