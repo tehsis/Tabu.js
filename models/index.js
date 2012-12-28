@@ -7,7 +7,11 @@ var mongoose = require('mongoose')
   , app = require('../common')
   , mongodb = app.get('mongodb');
 
-mongoose.connect(mongodb.url, mongodb.db, mongodb.port);
 var card = mongoose.model('card', schemas.card);
+mongoose.connect("localhost", "tabu", 27017);
+
+mongoose.connection.on('error', function() {
+	console.log("error");
+})
   
 exports.card = card;

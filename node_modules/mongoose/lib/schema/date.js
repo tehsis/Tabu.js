@@ -1,5 +1,5 @@
 
-/**
+/*!
  * Module requirements.
  */
 
@@ -11,6 +11,7 @@ var SchemaType = require('../schematype')
  *
  * @param {String} key
  * @param {Object} options
+ * @inherits SchemaType
  * @api private
  */
 
@@ -18,7 +19,7 @@ function SchemaDate (key, options) {
   SchemaType.call(this, key, options);
 };
 
-/**
+/*!
  * Inherits from SchemaType.
  */
 
@@ -62,10 +63,10 @@ SchemaDate.prototype.cast = function (value) {
   if (date.toString() != 'Invalid Date')
     return date;
 
-  throw new CastError('date', value);
+  throw new CastError('date', value, this.path);
 };
 
-/**
+/*!
  * Date Query casting.
  *
  * @api private
@@ -93,6 +94,15 @@ SchemaDate.prototype.$conditionalHandlers = {
   , '$all': handleArray
 };
 
+
+/**
+ * Casts contents for queries.
+ *
+ * @param {String} $conditional
+ * @param {any} [value]
+ * @api private
+ */
+
 SchemaDate.prototype.castForQuery = function ($conditional, val) {
   var handler;
 
@@ -109,7 +119,7 @@ SchemaDate.prototype.castForQuery = function ($conditional, val) {
   return handler.call(this, val);
 };
 
-/**
+/*!
  * Module exports.
  */
 

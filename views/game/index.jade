@@ -1,17 +1,12 @@
 extends ../layout
 
 block content
-    #card
-      h2.card-word <%= word %>
+    #cards-container
     .buttons
-      a.newCard-button Give me other!
-      a.correct-button correct!
+      a.newCard-button.button Give me other!
+      a.correct-button.button correct!
     .score
-      {{score}}
 
 
 block scripts
-  script(language="javascript", src="/javascripts/libs/underscore.js")
-  script(language="javascript", src="/javascripts/libs/zepto.js")
-  script(language="javascript", src="/javascripts/libs/backbone.js")
-  script(language="javascript", src="/javascripts/tabu.js")
+  script(language="javascript", data-main="javascripts/bootstrap", src="javascripts/libs/require.js")
