@@ -1,0 +1,8 @@
+<div id="<%= cid %>" class="card not-selected">
+	<h3 class="card-title"><%= attributes.word %></h3>
+	<ul class="card-tabues">
+		<% _.each(attributes.tabues, function(tabu) { %>
+			<li class="tabu"><%= tabu %></li>
+		<% }); %>
+	</ul>
+</div>

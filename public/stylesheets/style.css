@@ -2004,7 +2004,7 @@ table .span24 {
 .open {
   *z-index: 1000;
 }
-.open  > .dropdown-menu {
+.open > .dropdown-menu {
   display: block;
 }
 .pull-right > .dropdown-menu {
@@ -4201,7 +4201,7 @@ a.badge:hover {
 body {
   font-size: 12px;
 }
-#card {
+#cards-container {
   border-radius: 10px;
   border: 2px solid #000000;
   text-align: center;
@@ -4210,13 +4210,16 @@ body {
   height: 33em;
   background-color: #ffc4b2;
 }
-#card .card-word {
+#cards-container .card.not-selected {
+  display: none;
+}
+#cards-container .card h3.card-title {
   background-color: #D4CDF9;
 }
-#card ul.card-tabues {
+#cards-container .card ul.card-tabues {
   list-style: none;
 }
-#card ul.card-tabues li.tabu {
+#cards-container .card ul.card-tabues li.tabu {
   line-height: 2em;
   font-size: 3em;
 }

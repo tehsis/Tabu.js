@@ -12,7 +12,7 @@ body {
   border: @size solid @color;
 }
 
-#card {
+#cards-container {
   .rounded;
   .solid-border(2px, #000000);
   text-align: center;
@@ -20,16 +20,23 @@ body {
   width: 27em;
   height: 33em;
   background-color: #ffc4b2;
-  .card-word {
-      background-color: #D4CDF9;
+  .card.not-selected {
+    display: none;
   }
-  ul.card-tabues {
-    list-style: none; 
-    li.tabu {  
+  .card { 
+    h3.card-title {
+      background-color: #D4CDF9;
+    }
+    ul.card-tabues {
+      list-style: none; 
+      li.tabu {  
         line-height: 2em;
         font-size: 3em;
-    }
+      }
   }   
+
+  }
+
 
 } 
 
