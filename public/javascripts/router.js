@@ -7,7 +7,7 @@ define([
 ], function($, _, Backbone, DeckCollection, DeckView) {
 	var TabuRouter = Backbone.Router.extend({
 		routes: {
-			"*game": "initGame"
+			"game/:id": "initGame"
 		}
 	});
 

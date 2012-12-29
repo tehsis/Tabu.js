@@ -10,7 +10,6 @@ define([
 
 		render: function() {
 			var cardView = new CardView;
-			var that = this;
 
 			var cards_html = $();
 			this.collection.forEach(function(card) {
@@ -19,7 +18,7 @@ define([
 				cards_html = cards_html.add(card_html);
 			});
 			
-			that.$el.append(cards_html);	
+			this.$el.append(cards_html);	
 		}
 
 	});
