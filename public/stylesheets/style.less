@@ -2,6 +2,7 @@
 
 body {
   font-size: 12px;
+  background-color: #AD2D37;
 }
 
 .rounded(@radius: 10px) {
@@ -12,7 +13,21 @@ body {
   border: @size solid @color;
 }
 
+.add-shadow {
+  box-shadow: 11px 9px 21px 2px;
+}
+
+#form-container {
+  width: 50em;
+  margin-top: 8em;
+  .add-shadow;
+  .game-id {
+    height: 3em;
+  }
+}
+
 #cards-container {
+   margin-top: 8em;
   .rounded;
   .solid-border(2px, #000000);
   text-align: center;

@@ -17,7 +17,7 @@
   // Save the previous value of the `Backbone` variable, so that it can be
   // restored later on, if `noConflict` is used.
   var previousBackbone = root.Backbone;
-
+  
   // Create a local reference to array methods.
   var array = [];
   var push = array.push;
