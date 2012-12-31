@@ -1,14 +1,18 @@
 define([
 	"zepto",
 	"underscore",
-	"backbone"
+	"backbone",
+	"views/game"
 ], 
-function($, _, Backbone) {
+function($, _, Backbone, TabuView) {
 	var actions = {};
+	var tabuView = new TabuView;
 
 	actions.home = function() {
-		var createButton = $(".create-game");
+		$("#tabu").children().hide();
+		tabuView.render();
 
+		var createButton = $(".create-game");
 		createButton.click(function() {
 			window.location.hash = "game/001"
 		});

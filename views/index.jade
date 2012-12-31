@@ -1,13 +1,10 @@
-extends layout
+doctype 5
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+      #tabu.container
+      script(language="javascript", data-main="/javascripts/bootstrap", src="/javascripts/libs/require.js")
 
-block content
-		.row-fluid
-			#form-container.well.span12.offset2
-				form.login-form
-					fieldset
-						legend Enter a game o create it
-						input.game-id.input-block-level(type="text", name="game", placeholder="Join a game entering its ID")
-						button.enter-game.btn.btn-large.btn-success.btn-block(type="button") Enter 
-						button.create-game.btn.btn-large.btn-primary.btn-block(type="button") Create new game
-block scripts
-	script(language="javascript", data-main="/javascripts/bootstrap", src="/javascripts/libs/require.js")
+        
