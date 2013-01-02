@@ -2,9 +2,9 @@ define([
 	"zepto",
 	"underscore",
 	"backbone",
-	"controllers/game",
-	"controllers/card",
-], function($, _, Backbone, gameController, cardController) {
+	"views/game",
+	"views/deck",
+], function($, _, Backbone, GameView, DeckView) {
 	var TabuRouter = Backbone.Router.extend({
 		routes: {
 			"game/:id": "initGame",
@@ -16,8 +16,8 @@ define([
 		var tabuRouter = new TabuRouter;
 
 		// Routes actions
-		tabuRouter.on("route:initGame", cardController.getCard);
-		tabuRouter.on("route:homePage", gameController.home);
+		tabuRouter.on("route:initGame", function() {new DeckView});
+		tabuRouter.on("route:homePage", function () {new GameView;});
 
 		Backbone.history.start();
 	};
