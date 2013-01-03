@@ -2,20 +2,33 @@ define([
 	"zepto",
 	"underscore",
 	"backbone",
-	"models/team"
-], function($, _, Backbone, TeamModel) {
+	"models/team",
+	"collections/deck"
+], function($, _, Backbone, TeamModel, Deck) {
 	var GameModel = Backbone.Model.extend({
+		defaults: {
+			teamA: new TeamModel({"name" : "A"}),
+			teamB: new TeamModel({"name" : "B"}),
+			deck: new Deck,
+		},
+
 		initialize: function() {
-			this.teamA = new TeamModel;
-			this.teamB = new TeamModel;
+			this.set('currentTeam', this.get('teamA'));
 		},
 
 		toggleCurrentTeam: function() {
-			this.currentTeam = this.teamA?this.TeamB:this.teamA;
-		};
+			this.set('currentTeam', 
+				this.get('teamA') == this.get('currentTeam')
+				?	this.get('teamB')
+				:   this.get('teamA'));
+		},
+
+		getCurrentTeam: function() {
+			return this.get('currentTeam').get('name');
+		},
 
 		score: function() {
-			this.currentTeam.increaseScore();
+			this.get('currentTeam').increaseScore();
 		}
 
 	});

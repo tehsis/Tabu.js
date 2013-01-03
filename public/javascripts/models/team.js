@@ -6,6 +6,10 @@ define([
 	var TeamModel = Backbone.Model.extend({
 		defaults: {
 			score: 0
+		},
+
+		increaseScore: function() {
+			this.set('score', this.get('score') + 1);
 		}
 	});
 

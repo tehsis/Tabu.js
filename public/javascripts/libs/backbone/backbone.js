@@ -1347,9 +1347,9 @@
         method = _.bind(method, this);
         eventName += '.delegateEvents' + this.cid;
         if (selector === '') {
-          this.$el.bind(eventName, method);
+          this.$el.on(eventName, method);
         } else {
-          this.$el.delegate(selector, eventName, method);
+          this.$el.on(eventName, selector, method);
         }
       }
     },

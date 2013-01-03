@@ -2,28 +2,68 @@ define([
 	"zepto",
 	"underscore",
 	"backbone",
-	"text!/templates/new-game-form.html"	
-], function($, _, Backbone, newGameFormTemplate){
-	var TabuView = Backbone.View.extend({
+	"models/game",
+	"models/timer",
+	"views/deck",
+	"views/timer",
+	"views/requestTurn"
+], function($, _, Backbone, GameModel, TimerModel, DeckView, TimerView, RequestTurnView) {
+	var gameView = Backbone.View.extend({
 		el: $("#tabu"),
 
 		events: {
-			"click .create-game" : "createGame"
+			"click .correct-button" : "updateMarker"
 		},
+
+		updateMarker: function() {
+			this.game.score();
+			console.log(this.game.getCurrentTeam() + ": " +  this.game.get('currentTeam').get('score'));
+		},
+
 
 		initialize: function() {
-			this.render();	
-		},
+			var that = this;
+			this.game = new GameModel;
+			this.deckView = new DeckView({
+				collection: this.game.get("deck")
+			});
+			var timer = new TimerModel;
+			this.timerView = new TimerView({model: timer});
 
-		createGame: function() {
-			window.location.hash = "game/001";
+			this.requestTurnView = new RequestTurnView;
+
+			this.game.get('deck').fetch();
+			this.requestTurnView.render(this.game);
+
+			this.requestTurnView.on("newTurn", function() {
+				timer.start();
+				that.render();
+				that.game.get('deck').pickCard();
+			})
+
+			this.game.get('deck').on("change:selected", function(card, value) {
+				$("#" + card.cid).removeClass('not-selected');
+			});
+			this.game.get('deck').on("remove", function(card) {
+				$("#" + card.cid).addClass('not-selected');
+			});	
+
+			timer.on("timesup", function() {
+				console.log("timesup!");
+				that.game.toggleCurrentTeam();
+				that.requestTurnView.render(that.game);
+			})
 		},
 
 		render: function() {
 			this.$el.empty();
-			this.$el.append(newGameFormTemplate);
+			this.$el.append(this.deckView.render());
+			var that = this;
+			this.timerView.model.on('step', function() {
+				that.$el.prepend(that.timerView.render());
+			});
 		}
 	});
 
-	return TabuView;
+	return gameView;	
 });
