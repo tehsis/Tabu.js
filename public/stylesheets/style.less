@@ -1,9 +1,19 @@
+@import "normalize.css";
 @import "variables.less";
 
 body {
+  font-family: Times, serif;
   font-size: 12px;
   background-color: #AD2D37;
 }
+
+fieldset {
+  border: 0;
+  legend {
+    font-size: 2em;
+  }
+}
+
 
 .rounded(@radius: 10px) {
   border-radius: @radius;
@@ -17,21 +27,28 @@ body {
   box-shadow: 11px 9px 21px 2px;
 }
 
-.top-padding {
+.centered {
+  margin: 0 auto;
    margin-top: 8em;
 }
 
 #form-container {
   width: 50em;
-  margin-top: 8em;
+  .centered;
   .add-shadow;
   .game-id {
     height: 3em;
   }
 }
 
+#request-turn {
+  .centered;
+  width: 5em;
+}
+
 #cards-container {
   .rounded;
+  .centered;
   .solid-border(2px, #000000);
   text-align: center;
   box-shadow: 6px 5px 18px -3px;  
