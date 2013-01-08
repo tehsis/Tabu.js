@@ -33,55 +33,69 @@ fieldset {
 }
 
 #form-container {
-  width: 50em;
-  .centered;
+  width: 100%;
   .add-shadow;
   .game-id {
-    height: 3em;
+    width: 100%;
+    height: 5em;
+    border: none;
+  }
+  .button {
+    margin-top: 1.1em;
+    height: 6em;
+    width: 100%;
+    border: none;
+
   }
 }
 
 #request-turn {
-  .centered;
-  width: 5em;
+  width: 100%;
+  text-align: center;
+  .ready-button {
+    width: 50%;
+    height: 5em;
+  }
 }
 
 #cards-container {
-  .rounded;
-  .centered;
-  .solid-border(2px, #000000);
   text-align: center;
-  box-shadow: 6px 5px 18px -3px;  
-  width: 27em;
-  height: 33em;
+  width: 100%;
   background-color: #ffc4b2;
   .card.not-selected {
     display: none;
   }
   .card { 
-    h3.card-title {
+    .card-title {
+      display: block;
+      width: 100%;
       background-color: #D4CDF9;
+      font-size: 4em;
     }
     ul.card-tabues {
       list-style: none; 
       li.tabu {  
-        line-height: 2em;
+        line-height: 170%;
         font-size: 3em;
       }
   }   
 
   }
-
-
 } 
+
+.timer {
+  color: #FFFFFF;
+  background-color: #212121;
+  font-size: 4em;
+  text-align: center;
+}
 
 .button(@url) {
     background-image: url(@url);
-    width: 128px;
-    height: 128px;
+    width: 64px;
+    height: 64px;
     display: block;
     text-indent: -30000em;
-    float: left;
 }
 
 
@@ -93,15 +107,17 @@ fieldset {
 
 
 .buttons {
-  width: 316px;
-  margin-top: 30px;
+  width: 100%;
   .newCard-button {
+    width: 50%;
+    float: left;
     .button("/img/Crystal_Clear_action_button_cancel.png");
   }
 
   .correct-button {
+    width: 50%;
+    float: right;
     .button("/img/Crystal_Clear_action_apply.png");
-    margin-left: 60px;
   }
 }
 
