@@ -49,19 +49,19 @@ define([
 			});	
 
 			timer.on("timesup", function() {
-				console.log("timesup!");
 				that.game.toggleCurrentTeam();
 				that.requestTurnView.render(that.game);
 			})
+
+			this.timerView.model.on('step', function() {
+				that.$el.prepend(that.timerView.render());
+			});
 		},
 
 		render: function() {
 			this.$el.empty();
 			this.$el.append(this.deckView.render());
-			var that = this;
-			this.timerView.model.on('step', function() {
-				that.$el.prepend(that.timerView.render());
-			});
+			this.$el.prepend(this.timerView.render());
 		}
 	});
 
