@@ -28,11 +28,29 @@ How to get it running
 
 1. Clone the project into a local project.
 2. Make sure you have Node.js and MongoDB on your machine.
-3. Run 'npm install' at root in order to get the necessary dependencies.
-4. MongoDB must be running at localhost:27017 (You have to modify /common.js otherwise)  
-5. Run 'node setup/index.js'.
-6. Start the server executing "node index.js".
-7. Point your browser to htpp://localhost:3000.
+3. Run 
+
+   >npm install 
+
+   at root in order to get the necessary dependencies.
+
+4. MongoDB must be running at 
+
+   >localhost:27017 
+      
+   (You have to modify /common.js otherwise)  
+
+5. Run 
+
+   >$node setup/index.js
+
+6. Start the server executing:
+
+   >$node index.js
+   
+7. Point your browser to: 
+
+   >htpp://localhost:3000.
 
 Technical details
 -----------------
