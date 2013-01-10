@@ -2,7 +2,8 @@ define([
 	"zepto",
 	"underscore",
 	"backbone",
-	"text!/templates/new-game-form.html"	
+	"text!/templates/new-game-form.html",
+	"views/firefox-install"
 ], function($, _, Backbone, newGameFormTemplate){
 	var NewGameFormView = Backbone.View.extend({
 		el: $("#tabu"),
@@ -20,8 +21,11 @@ define([
 		},
 
 		render: function() {
-			this.$el.empty();
-			this.$el.append(newGameFormTemplate);
+			if (navigator.mozApps) {
+				firefoxInstall.install();
+			}
+
+			this.$el.prepend(newGameFormTemplate);
 		}
 	});
 

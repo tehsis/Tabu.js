@@ -13,6 +13,10 @@ fieldset legend {
 .firefox-install {
   display: none;
 }
+button {
+  height: 6em;
+  width: 100%;
+}
 .add-shadow {
   box-shadow: 11px 9px 21px 2px;
 }
@@ -32,8 +36,6 @@ fieldset legend {
 }
 #form-container .button {
   margin-top: 1.1em;
-  height: 6em;
-  width: 100%;
   border: none;
 }
 #request-turn {
