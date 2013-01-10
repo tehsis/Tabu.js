@@ -8,7 +8,7 @@ var mongoose = require('mongoose')
   , mongodb = app.get('mongodb');
 
 var card = mongoose.model('card', schemas.card);
-mongoose.connect("localhost", "tabu", 27017);
+mongoose.connect(mongodb.url, mongodb.db, mongodb.port);
 
 mongoose.connection.on('error', function() {
 	console.log("error");

@@ -5,13 +5,16 @@
 
 var mongoose = require("mongoose");
 var cards = require("./cards.js");
-var schemas = require("../models/schemas/cards.js");i
+var schemas = require("../models/schemas/cards.js");
+
+var common = require("../common.js")
+var mongodb = common.get('mongodb');
 
 var card = schemas.card;
 var Card = mongoose.model("card", card);
 var preloaded_cards = cards.cards;
 
-mongoose.connect("localhost", "tabu", 27017);
+mongoose.connect(mongodb.url, mongodb.db, mongodb.port);
 
 Card.find().remove(function() {
 	console.log("Elements removed.");

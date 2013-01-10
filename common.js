@@ -20,7 +20,7 @@ app.configure('development', function(){
   app.use(express.errorHandler());
   app.set('mongodb', {
     url  : "localhost",
-    port : "27017",
+    port : 27017,
     db   : "tabu"
   })
 });
