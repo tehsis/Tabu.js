@@ -1,0 +1,13 @@
+{
+  "name": "Tabu",
+  "description": "Play Tabu with your friends!",
+  "launch_path": "/",
+  "icons": {
+    "128": "/img/tabu-icon.png"
+  },
+  "developer": {
+    "name": "Your name or organization",
+    "url": "http://your-homepage-here.org"
+  },
+  "default_locale": "en"
+}

@@ -1,12 +1,11 @@
 require.config({
 	paths: {
-		zepto: "libs/zepto/zepto-require",
-		underscore: "libs/underscore/underscore-require",
-		backbone: "libs/backbone/backbone-require"
+		zepto: "libs/zepto/zepto",
+		underscore: "libs/underscore/underscore",
+		backbone: "libs/backbone/backbone"
 	}
 });
 
 require(["tabu"], function(tabu) {
-	var tabu = require("tabu");
 	tabu.initialize();
 });

@@ -1,47 +1,46 @@
-//     Backbone.js 0.9.9
+//     Backbone.js 0.9.9 (modified to add AMD registration)
 
 //     (c) 2010-2012 Jeremy Ashkenas, DocumentCloud Inc.
 //     Backbone may be freely distributed under the MIT license.
 //     For all details and documentation:
 //     http://backbonejs.org
 
-(function(){
+(function(root, factory) {
+  // Set up Backbone appropriately for the environment.
+  if (typeof exports !== 'undefined') {
+    // Node/CommonJS, no need for jQuery in that case.
+    factory(root, exports, require('underscore'));
+  } else if (typeof define === 'function' && define.amd) {
+    // AMD
+    define(['underscore', 'zepto', 'exports'], function(_, $, exports) {
+      // Export global even in AMD case in case this script is loaded with
+      // others that may still expect a global Backbone.
+      root.Backbone = factory(root, exports, _, $);
+    });
+  } else {
+    // Browser globals
+    root.Backbone = factory(root, {}, root._, (root.jQuery || root.Zepto || root.ender));
+  }
+}(this, function(root, Backbone, _, $) {
 
   // Initial Setup
   // -------------
 
-  // Save a reference to the global object (`window` in the browser, `exports`
-  // on the server).
-  var root = this;
-
   // Save the previous value of the `Backbone` variable, so that it can be
   // restored later on, if `noConflict` is used.
   var previousBackbone = root.Backbone;
-  
+
   // Create a local reference to array methods.
   var array = [];
   var push = array.push;
   var slice = array.slice;
   var splice = array.splice;
 
-  // The top-level namespace. All public Backbone classes and modules will
-  // be attached to this. Exported for both CommonJS and the browser.
-  var Backbone;
-  if (typeof exports !== 'undefined') {
-    Backbone = exports;
-  } else {
-    Backbone = root.Backbone = {};
-  }
-
   // Current version of the library. Keep in sync with `package.json`.
   Backbone.VERSION = '0.9.9';
 
-  // Require Underscore, if we're on the server, and it's not already present.
-  var _ = root._;
-  if (!_ && (typeof require !== 'undefined')) _ = require('underscore');
-
   // For Backbone's purposes, jQuery, Zepto, or Ender owns the `$` variable.
-  Backbone.$ = root.jQuery || root.Zepto || root.ender;
+  Backbone.$ = $;
 
   // Runs Backbone.js in *noConflict* mode, returning the `Backbone` variable
   // to its previous owner. Returns a reference to this Backbone object.
@@ -1042,7 +1041,7 @@
     this.handlers = [];
     _.bindAll(this, 'checkUrl');
 
-    // Ensure that `History` can be used outside of the browser.
+    // #1653 - Ensure that `History` can be used outside of the browser.
     if (typeof window !== 'undefined') {
       this.location = window.location;
       this.history = window.history;
@@ -1238,7 +1237,7 @@
         var href = location.href.replace(/(javascript:|#).*$/, '');
         location.replace(href + '#' + fragment);
       } else {
-        // Some browsers require that `hash` contains a leading #.
+        // #1649 - Some browsers require that `hash` contains a leading #.
         location.hash = '#' + fragment;
       }
     }
@@ -1347,9 +1346,9 @@
         method = _.bind(method, this);
         eventName += '.delegateEvents' + this.cid;
         if (selector === '') {
-          this.$el.on(eventName, method);
+          this.$el.bind(eventName, method);
         } else {
-          this.$el.on(eventName, selector, method);
+          this.$el.delegate(selector, eventName, method);
         }
       }
     },
@@ -1530,4 +1529,5 @@
     throw new Error('A "url" property or function must be specified');
   };
 
-}).call(this);
+  return Backbone;
+}));

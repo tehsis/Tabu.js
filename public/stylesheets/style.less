@@ -14,6 +14,10 @@ fieldset {
   }
 }
 
+.firefox-install {
+  display: none;
+}
+
 
 .rounded(@radius: 10px) {
   border-radius: @radius;
@@ -36,7 +40,8 @@ fieldset {
   width: 100%;
   .add-shadow;
   .game-id {
-    width: 100%;
+    padding-left: 1%;
+    width: 99%;
     height: 5em;
     border: none;
   }
@@ -98,24 +103,18 @@ fieldset {
     text-indent: -30000em;
 }
 
-
 .score.ng-binding {
     font-size: 8em;
     clear: both;
     padding-top: 50px;
 }
-
-
 .buttons {
   width: 100%;
   .newCard-button {
-    width: 50%;
     float: left;
     .button("/img/Crystal_Clear_action_button_cancel.png");
   }
-
   .correct-button {
-    width: 50%;
     float: right;
     .button("/img/Crystal_Clear_action_apply.png");
   }

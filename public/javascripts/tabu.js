@@ -1,10 +1,7 @@
 define([
-	"zepto",
-	"underscore",
-	"backbone",
-	"router"
+  "router"
 ],
-  function($, _, Backbone, router) {
+  function(router) {
   	var initialize = function() {
   		router.initialize();
   	}

@@ -10,6 +10,9 @@ fieldset {
 fieldset legend {
   font-size: 2em;
 }
+.firefox-install {
+  display: none;
+}
 .add-shadow {
   box-shadow: 11px 9px 21px 2px;
 }
@@ -22,7 +25,8 @@ fieldset legend {
   box-shadow: 11px 9px 21px 2px;
 }
 #form-container .game-id {
-  width: 100%;
+  padding-left: 1%;
+  width: 99%;
   height: 5em;
   border: none;
 }
@@ -76,7 +80,6 @@ fieldset legend {
   width: 100%;
 }
 .buttons .newCard-button {
-  width: 50%;
   float: left;
   background-image: url("/img/Crystal_Clear_action_button_cancel.png");
   width: 64px;
@@ -85,7 +88,6 @@ fieldset legend {
   text-indent: -30000em;
 }
 .buttons .correct-button {
-  width: 50%;
   float: right;
   background-image: url("/img/Crystal_Clear_action_apply.png");
   width: 64px;
