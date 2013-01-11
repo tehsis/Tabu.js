@@ -10,9 +10,6 @@ fieldset {
 fieldset legend {
   font-size: 2em;
 }
-.firefox-install {
-  display: none;
-}
 button {
   height: 6em;
   width: 100%;
