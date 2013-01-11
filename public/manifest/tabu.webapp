@@ -3,7 +3,8 @@
   "description": "Play Tabu with your friends!",
   "launch_path": "/",
   "icons": {
-    "128": "/img/tabu-icon.png"
+    "60": "/img/tabu-icon.png",
+    "128": "/img/tabu-icon-128.png"
   },
   "developer": {
     "name": "Your name or organization",
