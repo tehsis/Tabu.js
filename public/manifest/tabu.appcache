@@ -1,4 +1,10 @@
 CACHE MANIFEST
 
+NETWORK:
+*
+
 CACHE:
+/stylesheets/normalize.css
+/stylesheets/style.css
 /card
+
