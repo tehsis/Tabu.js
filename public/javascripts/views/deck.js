@@ -2,9 +2,9 @@ define([
 	"zepto",
 	"underscore",
 	"backbone",
-	"collections/deck",
-	"views/card",
-	"text!/templates/deck.html"
+	"javascripts/collections/deck",
+	"javascripts/views/card",
+	"javascripts/text!templates/deck.html"
 ], function($, _, Backbonea, Deck, CardView, deckTemplate) {
 	var DeckView = Backbone.View.extend({
 		events: {

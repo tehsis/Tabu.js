@@ -2,8 +2,8 @@ define([
 	"zepto",
 	"underscore",
 	"backbone",
-	"models/team",
-	"collections/deck"
+	"javascripts/models/team",
+	"javascripts/collections/deck"
 ], function($, _, Backbone, TeamModel, Deck) {
 	var GameModel = Backbone.Model.extend({
 		defaults: {

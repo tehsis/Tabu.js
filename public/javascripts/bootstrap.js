@@ -1,11 +1,12 @@
 require.config({
+	baseUrl: "..",
 	paths: {
-		zepto: "libs/zepto/zepto",
-		underscore: "libs/underscore/underscore",
-		backbone: "libs/backbone/backbone"
+		zepto: "/javascripts/libs/zepto/zepto",
+		underscore: "/javascripts/libs/underscore/underscore",
+		backbone: "/javascripts/libs/backbone/backbone"
 	}
 });
 
-require(["tabu"], function(tabu) {
+require(["javascripts/tabu"], function(tabu) {
 	tabu.initialize();
 });

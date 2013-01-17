@@ -1,5 +1,5 @@
 define([
-  "router"
+  "javascripts/router"
 ],
   function(router) {
   	var initialize = function() {

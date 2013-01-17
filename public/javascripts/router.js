@@ -2,8 +2,8 @@ define([
 	"zepto",
 	"underscore",
 	"backbone",
-	"views/newgameform",
-	"views/game",
+	"javascripts/views/newgameform",
+	"javascripts/views/game",
 ], function($, _, Backbone, NewGameFormView, GameView) {
 	var TabuRouter = Backbone.Router.extend({
 		routes: {

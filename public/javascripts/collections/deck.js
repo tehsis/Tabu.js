@@ -2,7 +2,7 @@ define(
 [
 	"underscore",
 	"backbone",
-	"models/card"
+	"javascripts/models/card"
 ],
 
 function(_, Backbone, cardModel) {

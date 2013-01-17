@@ -2,8 +2,8 @@ define([
 	"zepto",
 	"underscore",
 	"backbone",
-	"models/timer",
-	"text!/templates/timer.html"
+	"javascripts/models/timer",
+	"javascripts/text!templates/timer.html"
 ], function($, _, Backbone, TimerModel, timerTemplate) {
 	var TimerView = Backbone.View.extend({
 

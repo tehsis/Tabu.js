@@ -2,7 +2,7 @@ define([
 	"zepto",
 	"underscore",
 	"backbone",
-	"text!/templates/request-start-team.html"
+	"javascripts/text!templates/request-start-team.html"
 ], function($, _, Backbone, requestTurnTemplate) {
 	var RequestTurnView = Backbone.View.extend({
 		el: $("#tabu"),

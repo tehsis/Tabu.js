@@ -2,8 +2,8 @@ define([
 	"zepto",
 	"underscore",
 	"backbone",
-	"text!/templates/new-game-form.html",
-	"views/firefox-install"
+	"javascripts/text!templates/new-game-form.html",
+	"javascripts/views/firefox-install"
 ], function($, _, Backbone, newGameFormTemplate){
 	var NewGameFormView = Backbone.View.extend({
 		el: $("#tabu"),

@@ -2,11 +2,11 @@ define([
 	"zepto",
 	"underscore",
 	"backbone",
-	"models/game",
-	"models/timer",
-	"views/deck",
-	"views/timer",
-	"views/requestTurn"
+	"javascripts/models/game",
+	"javascripts/models/timer",
+	"javascripts/views/deck",
+	"javascripts/views/timer",
+	"javascripts/views/requestTurn"
 ], function($, _, Backbone, GameModel, TimerModel, DeckView, TimerView, RequestTurnView) {
 	var gameView = Backbone.View.extend({
 		el: $("#tabu"),
