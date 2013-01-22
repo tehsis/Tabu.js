@@ -1,0 +1,57 @@
+/**
+ * Commands for building the project.
+ * More info: http://www.volojs.org/ 
+**/
+
+module.exports = {
+    cleanfrontend: {
+        summary: "Removes frontend build files.",
+        run: "v.rm tabu-built/public"
+    },
+
+    clean: {
+        summary: "Removes the generated files.",
+        run: "v.rm tabu-built"
+    },
+
+    minify: {
+        summary: "Minifies the project *.js (using r.js)",
+        run: "n.r.js -o build.js out=tabu.js"
+    },
+
+    createBuildDir: {
+        summary: "Creates the build directory.",
+        run: "v.mkdir tabu-built"
+    },
+
+    buildbackend: {
+        summary: "Builds the backend.",
+        depends: ["clean", "createBuildDir"],
+        run: [
+                "v.cp node_modules tabu-built/node_modules",
+                "v.cp controllers tabu-built/controllers",
+                "v.cp views tabu-built/views",
+                "v.cp models tabu-built/models",
+                "v.cp common.js tabu-built/common.js",
+                "v.cp index.js tabu-built/index.js"
+             ]
+    },
+
+    buildfrontend: {
+        summary: "Builds the frontend.",
+        depends: ["cleanfrontend", "minify", "createBuildDir"],
+        run: [
+                "v.mkdir tabu-built/public",
+                "v.copyDir public tabu-built/public",
+                "v.rm tabu-built/public/javascripts",
+                "v.rm tabu-built/public/templates",
+                "v.mkdir tabu-built/public/javascripts"
+            ]
+    },
+
+    build: {
+        summary: "Builds the project and makes it ready to deploy.",
+        depends: ["clean", "buildfrontend", "buildbackend"],
+        run: "v.mv tabu.js tabu-built/public/javascripts/tabu.js"
+    }
+}
