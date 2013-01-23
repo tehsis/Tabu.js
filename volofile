@@ -24,16 +24,28 @@ module.exports = {
         run: "v.mkdir tabu-built"
     },
 
+    cleanbackend: {
+        summary: "Cleans the backend directories.",
+        run: [
+                "v.rm tabu-built/node_modules",
+                "v.rm tabu-built/controllers",
+                "v.rm tabu-built/views",
+                "v.rm tabu-built/models",
+                "v.rm tabu-built/common.js",
+                "v.rm tabu-built/index.js",
+             ]
+    },
+
     buildbackend: {
         summary: "Builds the backend.",
-        depends: ["clean", "createBuildDir"],
+        depends: ["cleanbackend", "createBuildDir"],
         run: [
-                "v.cp node_modules tabu-built/node_modules",
-                "v.cp controllers tabu-built/controllers",
-                "v.cp views tabu-built/views",
-                "v.cp models tabu-built/models",
-                "v.cp common.js tabu-built/common.js",
-                "v.cp index.js tabu-built/index.js"
+                "v.copyDir node_modules tabu-built/node_modules",
+                "v.copyDir controllers tabu-built/controllers",
+                "v.copyDir views tabu-built/views",
+                "v.copyDir models tabu-built/models",
+                "v.copyFile common.js tabu-built/common.js",
+                "v.copyFile index.js tabu-built/index.js"
              ]
     },
 
@@ -45,13 +57,14 @@ module.exports = {
                 "v.copyDir public tabu-built/public",
                 "v.rm tabu-built/public/javascripts",
                 "v.rm tabu-built/public/templates",
-                "v.mkdir tabu-built/public/javascripts"
+                "v.mkdir tabu-built/public/javascripts",
+                "v.copyFile public/javascripts/require.js tabu-built/public/javascripts/require.js",
+                "v.mv tabu.js tabu-built/public/javascripts/tabu.js"
             ]
     },
 
     build: {
         summary: "Builds the project and makes it ready to deploy.",
-        depends: ["clean", "buildfrontend", "buildbackend"],
-        run: "v.mv tabu.js tabu-built/public/javascripts/tabu.js"
+        depends: ["clean", "buildfrontend", "buildbackend"]
     }
 }

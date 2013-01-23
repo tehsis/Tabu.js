@@ -1,13 +1,12 @@
-define([
-  "javascripts/router"
-],
-  function(router) {
-  	var initialize = function() {
-  		router.initialize();
-  	}
+require.config({
+	baseUrl: "..",
+	paths: {
+		zepto: "/javascripts/libs/zepto/zepto",
+		underscore: "/javascripts/libs/underscore/underscore",
+		backbone: "/javascripts/libs/backbone/backbone"
+	}
+});
 
-  	return {
-  		initialize: initialize
-  	}
-
+require(["javascripts/init"], function(tabu) {
+	tabu.initialize();
 });

@@ -5,6 +5,6 @@
     	underscore: "javascripts/libs/underscore/underscore",
 		backbone: "javascripts/libs/backbone/backbone"
     },
-    name: "javascripts/bootstrap",
+    name: "javascripts/tabu",
     out: "main-built.js"
 })
