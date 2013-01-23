@@ -3,15 +3,19 @@
  * More info: http://www.volojs.org/ 
 **/
 
+var paths = {
+    buildDir: "tabu-build"
+};
+
 module.exports = {
     cleanfrontend: {
         summary: "Removes frontend build files.",
-        run: "v.rm tabu-built/public"
+        run: "v.rm " + paths.buildDir + "/public"
     },
 
     clean: {
         summary: "Removes the generated files.",
-        run: "v.rm tabu-built"
+        run: "v.rm " + paths.buildDir 
     },
 
     minify: {
@@ -21,18 +25,18 @@ module.exports = {
 
     createBuildDir: {
         summary: "Creates the build directory.",
-        run: "v.mkdir tabu-built"
+        run: "v.mkdir " + paths.buildDir
     },
 
     cleanbackend: {
         summary: "Cleans the backend directories.",
         run: [
-                "v.rm tabu-built/node_modules",
-                "v.rm tabu-built/controllers",
-                "v.rm tabu-built/views",
-                "v.rm tabu-built/models",
-                "v.rm tabu-built/common.js",
-                "v.rm tabu-built/index.js",
+                "v.rm " + paths.buildDir + "/node_modules",
+                "v.rm " + paths.buildDir + "/controllers",
+                "v.rm " + paths.buildDir + "/views",
+                "v.rm " + paths.buildDir + "/models",
+                "v.rm " + paths.buildDir + "/common.js",
+                "v.rm " + paths.buildDir + "/index.js",
              ]
     },
 
@@ -40,12 +44,12 @@ module.exports = {
         summary: "Builds the backend.",
         depends: ["cleanbackend", "createBuildDir"],
         run: [
-                "v.copyDir node_modules tabu-built/node_modules",
-                "v.copyDir controllers tabu-built/controllers",
-                "v.copyDir views tabu-built/views",
-                "v.copyDir models tabu-built/models",
-                "v.copyFile common.js tabu-built/common.js",
-                "v.copyFile index.js tabu-built/index.js"
+                "v.copyDir node_modules " + paths.buildDir + "/node_modules",
+                "v.copyDir controllers " + paths.buildDir + "/controllers",
+                "v.copyDir views " + paths.buildDir + "/views",
+                "v.copyDir models " + paths.buildDir + "/models",
+                "v.copyFile common.js " + paths.buildDir + "/common.js",
+                "v.copyFile index.js " + paths.buildDir + "/index.js"
              ]
     },
 
@@ -53,13 +57,16 @@ module.exports = {
         summary: "Builds the frontend.",
         depends: ["cleanfrontend", "minify", "createBuildDir"],
         run: [
-                "v.mkdir tabu-built/public",
-                "v.copyDir public tabu-built/public",
-                "v.rm tabu-built/public/javascripts",
-                "v.rm tabu-built/public/templates",
-                "v.mkdir tabu-built/public/javascripts",
-                "v.copyFile public/javascripts/require.js tabu-built/public/javascripts/require.js",
-                "v.mv tabu.js tabu-built/public/javascripts/tabu.js"
+                "v.mkdir " + paths.buildDir + "/public",
+                "v.copyDir public " + paths.buildDir + "/public",
+                "v.rm " + paths.buildDir + "/public/javascripts",
+                "v.rm " + paths.buildDir + "/public/templates",
+                "v.rm " + paths.buildDir + "/public/manifest",
+                "v.mkdir " + paths.buildDir + "/public/javascripts",
+                "v.mkdir " + paths.buildDir + "/public/manifest",
+                "v.copyFile public/manifest/tabu.appcache-build " + paths.buildDir + "/public/manifest/tabu.appcache",
+                "v.copyFile public/javascripts/require.js " + paths.buildDir + "/public/javascripts/require.js",
+                "v.mv tabu.js " + paths.buildDir + "/public/javascripts/tabu.js"
             ]
     },
 

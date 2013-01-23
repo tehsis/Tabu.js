@@ -1,11 +1,4 @@
 CACHE MANIFEST
 
-CACHE:
-/card
-/stylesheets/normalize.css
-/stylesheets/style.css
-/javascripts/main-built.js
-/javascripts/libs/require.js
-/img/Crystal_Clear_action_button_cancel.png
-/img/Crystal_Clear_action_apply.png
-
+NETWORK:
+*
