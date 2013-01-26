@@ -1,7 +1,8 @@
 define(
 function() {
 	var manifest = window.location + "/manifest/tabu.webapp";
-	firefoxInstall = {
+
+	FirefoxInstall = Backbone.Views.extend({
 		// At desktop and Android's devices result will be null until
 		// Firefox gets https://bugzilla.mozilla.org/show_bug.cgi?id=806597
 		// fixed. Meanwhile, I'll relay on localstorage to check
@@ -22,7 +23,7 @@ function() {
 				};
 			};
 		}
-	}
+	});
 
 	return firefoxInstall;
 

@@ -1,14 +1,13 @@
 {
   "name": "Tabu",
   "description": "Play Tabu with your friends!",
-  "launch_path": "/",
   "icons": {
     "60": "/img/tabu-icon.png",
     "128": "/img/tabu-icon-128.png"
   },
   "developer": {
-    "name": "Your name or organization",
-    "url": "http://your-homepage-here.org"
+    "name": "Tehsis",
+    "url": "http://tehsis.com.ar"
   },
   "default_locale": "en"
 }
