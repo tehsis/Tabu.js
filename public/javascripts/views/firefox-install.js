@@ -25,6 +25,6 @@ function() {
 		}
 	});
 
-	return firefoxInstall;
+	return FirefoxInstall;
 
 });

@@ -4,7 +4,7 @@ define([
 	"backbone",
 	"javascripts/text!templates/new-game-form.html",
 	"javascripts/views/firefox-install"
-], function($, _, Backbone, newGameFormTemplate){
+], function($, _, Backbone, newGameFormTemplate, FirefoxInstall){
 	var NewGameFormView = Backbone.View.extend({
 		el: $("#tabu"),
 
@@ -22,6 +22,7 @@ define([
 
 		render: function() {
 			if (navigator.mozApps) {
+				var firefoxInstall = new FirefoxInstall;
 				firefoxInstall.install();
 			}
 
