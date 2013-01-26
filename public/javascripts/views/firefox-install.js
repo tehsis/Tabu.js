@@ -2,7 +2,7 @@ define(
 function() {
 	var manifest = window.location + "/manifest/tabu.webapp";
 
-	FirefoxInstall = Backbone.Views.extend({
+	FirefoxInstall = Backbone.View.extend({
 		// At desktop and Android's devices result will be null until
 		// Firefox gets https://bugzilla.mozilla.org/show_bug.cgi?id=806597
 		// fixed. Meanwhile, I'll relay on localstorage to check
