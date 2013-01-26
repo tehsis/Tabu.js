@@ -65,7 +65,7 @@ module.exports = {
                 "v.mkdir " + paths.buildDir + "/public/javascripts",
                 "v.mkdir " + paths.buildDir + "/public/manifest",
                 "v.copyFile public/manifest/tabu.appcache-build " + paths.buildDir + "/public/manifest/tabu.appcache",
-                "v.copyFile public/manifest/tabu.webapp" + paths.buildDir + "/public/manifest/tabu.webapp",
+                "v.copyFile public/manifest/tabu.webapp " + paths.buildDir + "/public/manifest/tabu.webapp",
                 "v.copyFile public/javascripts/require.js " + paths.buildDir + "/public/javascripts/require.js",
                 "v.mv tabu.js " + paths.buildDir + "/public/javascripts/tabu.js"
             ]
