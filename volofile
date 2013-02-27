@@ -49,6 +49,7 @@ module.exports = {
                 "v.copyDir views " + paths.buildDir + "/views",
                 "v.copyDir models " + paths.buildDir + "/models",
                 "v.copyFile common.js " + paths.buildDir + "/common.js",
+                "v.copyFile Procfile " + paths.buildDir + "/Procfile",
                 "v.copyFile index.js " + paths.buildDir + "/index.js"
              ]
     },

@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "node ."
+    "start": "node index.js"
   },
   "dependencies": {
-    "express": "3.0.*",
+    "express": "*",
     "jade": "*",
     "less-middleware": "*",
     "mongoose" : "*"

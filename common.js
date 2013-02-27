@@ -1,6 +1,6 @@
 var express = require('express')
   , http = require('http')
-var app = module.exports = express.createServer();
+var app = module.exports = express();
 
 app.configure(function(){
   app.set('port', process.env.PORT || 3000);
