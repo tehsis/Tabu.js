@@ -9,6 +9,11 @@ app.get("/manifest/tabu.appcache", function(req, res, next) {
 	next();
 })
 
+app.get("/manifest/tabu.webapp", function(req, res, next) {
+	res.header("Content-Type", "application/x-web-app-manifest+json");
+	next();
+});
+
 app.use("/card", controllers.card.index);
 app.use("/", controllers.tabu.index); 
 
