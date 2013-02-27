@@ -21,6 +21,7 @@ define([
 		},
 
 		render: function() {
+			this.$el.empty();
 			if (navigator.mozApps) {
 				var firefoxInstall = new FirefoxInstall;
 				firefoxInstall.install();

@@ -20,7 +20,7 @@ module.exports = {
 
     minify: {
         summary: "Minifies the project *.js (using r.js)",
-        run: "n.r.js -o build.js out=tabu.js"
+        run: "n.r.js -o build.js include=requireLib paths.requireLib=javascripts/require  out=require.js"
     },
 
     createBuildDir: {
@@ -67,13 +67,12 @@ module.exports = {
                 "v.mkdir " + paths.buildDir + "/public/manifest",
                 "v.copyFile public/manifest/tabu.appcache-build " + paths.buildDir + "/public/manifest/tabu.appcache",
                 "v.copyFile public/manifest/tabu.webapp " + paths.buildDir + "/public/manifest/tabu.webapp",
-                "v.copyFile public/javascripts/require.js " + paths.buildDir + "/public/javascripts/require.js",
-                "v.mv tabu.js " + paths.buildDir + "/public/javascripts/tabu.js"
+                "v.mv require.js " + paths.buildDir + "/public/javascripts/require.js"
             ]
     },
 
     build: {
         summary: "Builds the project and makes it ready to deploy.",
-        depends: ["clean", "buildfrontend", "buildbackend"]
+        depends: [buildfrontend", "buildbackend"]
     }
 }

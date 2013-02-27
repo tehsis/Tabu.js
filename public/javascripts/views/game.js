@@ -23,6 +23,8 @@ define([
 
 		initialize: function() {
 			var that = this;
+
+			this.$el.empty();
 			this.game = new GameModel;
 			this.deckView = new DeckView({
 				collection: this.game.get("deck")
@@ -51,7 +53,7 @@ define([
 			timer.on("timesup", function() {
 				that.game.toggleCurrentTeam();
 				that.requestTurnView.render(that.game);
-			})
+			});
 
 			this.timerView.model.on('step', function() {
 				that.$el.prepend(that.timerView.render());
