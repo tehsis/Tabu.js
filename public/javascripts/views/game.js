@@ -6,8 +6,9 @@ define([
 	"javascripts/models/timer",
 	"javascripts/views/deck",
 	"javascripts/views/timer",
-	"javascripts/views/requestTurn"
-], function($, _, Backbone, GameModel, TimerModel, DeckView, TimerView, RequestTurnView) {
+	"javascripts/views/requestTurn",
+	"javascripts/static_cards"
+], function($, _, Backbone, GameModel, TimerModel, DeckView, TimerView, RequestTurnView, static_cards) {
 	var gameView = Backbone.View.extend({
 		el: $("#tabu"),
 
@@ -34,7 +35,8 @@ define([
 
 			this.requestTurnView = new RequestTurnView;
 
-			this.game.get('deck').fetch();
+			this.game.get('deck').add(static_cards);
+
 			this.requestTurnView.render(this.game);
 
 			this.requestTurnView.on("newTurn", function() {

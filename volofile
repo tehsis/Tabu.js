@@ -73,6 +73,6 @@ module.exports = {
 
     build: {
         summary: "Builds the project and makes it ready to deploy.",
-        depends: [buildfrontend", "buildbackend"]
+        depends: ["buildfrontend", "buildbackend"]
     }
 }

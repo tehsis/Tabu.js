@@ -14,7 +14,6 @@ app.get("/manifest/tabu.webapp", function(req, res, next) {
 	next();
 });
 
-app.use("/card", controllers.card.index);
 app.use("/", controllers.tabu.index); 
 
 // JSON Responses
