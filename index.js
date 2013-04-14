@@ -1,7 +1,7 @@
 
 //Module dependencies.
 var app = require('./common.js');
-var controllers = require('./controllers');
+var express = require('express');
 
 // Routes
 app.get("/manifest/tabu.appcache", function(req, res, next) {
@@ -14,7 +14,9 @@ app.get("/manifest/tabu.webapp", function(req, res, next) {
 	next();
 });
 
-app.use("/", controllers.tabu.index); 
+app.use("/", function(req, res) {
+    res.render("index");
+}); 
 
 // JSON Responses
 
