@@ -29,6 +29,10 @@ define([
 
 			this.$el.append(compiled_template);
 
+            this.on("route", function() {
+                console.log("cambiamos");
+            });
+
 			return this.$el;
 		}
 

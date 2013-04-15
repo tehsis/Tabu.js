@@ -16,6 +16,12 @@ define([
 			this.set("timer", 0);
 		},
 
+        stop: function () {
+            this.trigger("timestop");
+            this.resetTimer();
+            window.clearTimeout(this._timeoutId);
+        },
+
 		start: function() {
 			var timer = this.get("timer");
 			var time = this.get("time");
@@ -24,12 +30,12 @@ define([
 			var that = this;
 
 			var step = function () {
-					timeoutId = setTimeout(function () {
+					that._timeoutId = setTimeout(function () {
 					timer++;
 					that.set("timer", timer);
 					that.trigger("step");
 					if (timer != time) { 
-					step();
+					    step();
 					} else {
 						that.trigger("timesup");
 						// Reset timer

@@ -60,6 +60,10 @@ define([
 			this.timerView.model.on('step', function() {
 				that.$el.prepend(that.timerView.render());
 			});
+
+            Backbone.history.on("route", function() {
+                timer.stop();
+            });
 		},
 
 		render: function() {
