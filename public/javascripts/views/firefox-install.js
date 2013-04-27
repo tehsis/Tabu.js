@@ -10,14 +10,11 @@ function() {
 		// This is not going to work if the application was uninstalled
 		// or if the user deletes its localstorage.
 		install: function() {
-			if (localStorage.getItem("installed") != "true") { 
+			if (navigator.mozApps.checkInstalled(manifest) != "true") { 
 				var request = navigator.mozApps.getSelf();
 				request.onsuccess = function() {
 					if (!request.result) {
-						var install_request = navigator.mozApps.install(manifest); 	
-						install_request.onsuccess = function() {
-							localStorage.setItem('installed', true);
-						};
+						navigator.mozApps.install(manifest); 	
 					};
 
 				};
