@@ -2,121 +2,63 @@
 @import "variables.less";
 
 body {
-  font-family: Times, serif;
-  font-size: 12px;
-  background-color: #AD2D37;
+  background-color: #000000;
+  color: #FFFFFF;
 }
 
-fieldset {
-  border: 0;
-  legend {
-    font-size: 2em;
-  }
-}
-
-button {
-  height: 6em;
-  width: 100%;
-}
-
-.rounded(@radius: 10px) {
-  border-radius: @radius;
-}
-
-.solid-border(@size: 2px, @color: #bada55) {
-  border: @size solid @color;
-}
-
-.add-shadow {
-  box-shadow: 11px 9px 21px 2px;
-}
-
-.centered {
-  margin: 0 auto;
-   margin-top: 8em;
-}
-
-#form-container {
-  width: 100%;
-  .add-shadow;
-  .game-id {
-    padding-left: 1%;
-    width: 99%;
-    height: 5em;
-    border: none;
+#tabu {
+  position: fixed;
+  border: none;
+  top: 5%;
+  left: 5%;
+  height: 90%;
+  width: 90%; 
+  .main-container {
+    height: 100%;
+    .next-team {
+      text-align: center;
+    }
+    .scores {
+      width: 80%;
+      margin-left: 15%;
+      margin-top: 5%;
+      .team-score {
+        text-align: center;
+        font-size: 8rem;
+      }
+      .score_info {
+        .team-label {
+          border-bottom: 1px solid #FFFFFF;
+        }
+      }
+      .score_a {
+        float: left;
+      }
+      .score_b {
+        float: left;
+        @media (min-width : 296px) { 
+          border-left: 1px solid #FFFFFF;
+        };
+      }
+    }
+    .card {
+      ul {
+        list-style-type: none;
+      }
+      &.not-selected {
+        display: none;
+      }
+    }
   }
   .button {
-    margin-top: 1.1em;
-
     border: none;
-
-  }
-}
-
-#request-turn {
-  width: 100%;
-  text-align: center;
-  .ready-button {
-    width: 50%;
-    height: 5em;
-  }
-}
-
-#cards-container {
-  text-align: center;
-  width: 100%;
-  background-color: #ffc4b2;
-  .card.not-selected {
-    display: none;
-  }
-  .card { 
-    .card-title {
-      display: block;
-      width: 100%;
-      background-color: #D4CDF9;
-      font-size: 4em;
+    border-radius: 20px;
+    font-weight: bold;
+    &.create-game {
+      margin-top: 35%;
+      margin-left: 25%;
+      width: 50%;
+      height: 30%;
     }
-    ul.card-tabues {
-      list-style: none; 
-      li.tabu {  
-        line-height: 170%;
-        font-size: 3em;
-      }
-  }   
-
-  }
-} 
-
-.timer {
-  color: #FFFFFF;
-  background-color: #212121;
-  font-size: 4em;
-  text-align: center;
-}
-
-.button(@url) {
-    background-image: url(@url);
-    width: 64px;
-    height: 64px;
-    display: block;
-    text-indent: -30000em;
-}
-
-.score.ng-binding {
-    font-size: 8em;
-    clear: both;
-    padding-top: 50px;
-}
-
-.buttons {
-  width: 100%;
-  .newCard-button {
-    float: left;
-    .button("/img/Crystal_Clear_action_button_cancel.png");
-  }
-  .correct-button {
-    float: right;
-    .button("/img/Crystal_Clear_action_apply.png");
   }
 }
-

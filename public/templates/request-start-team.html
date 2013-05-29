@@ -1,15 +1,16 @@
-<div id="request-turn">
-	<div class="">
-		<h1 class="">Team <%= currentTeam %></h1>
+<div id="request-turn" class="main-container">
+	<div class="next-team">
+    <aside class="next_text">Próximo:</aside>
+		<h1 class="">Equipo <%= currentTeam %></h1>
 		<button type="button" class="ready-button">Ready!</button>
 	</div>
 	<div class="scores">
-		<div class="">
-			<h2 class="team-label">Team <%= teamA.name %></h2>
+		<div class="score_info score_a">
+			<h2 class="team-label">Equipo <%= teamA.name %></h2>
 			<span class="team-score"><%= teamA.score %></span>
 		</div>
-		<div class="">
-			<h2 class="team-label">Team <%= teamB.name %></h2>
+		<div class="score_info score_b">
+			<h2 class="team-label">Equipo <%= teamB.name %></h2>
 			<span class="team-score"><%= teamB.score %></span>
 		</div>
 	</div>
