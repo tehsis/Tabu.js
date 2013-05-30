@@ -9,7 +9,8 @@ define([
 		el: $("#tabu"),
 
 		events: {
-			"click .create-game" : "createGame"
+			"click .create-game" : "createGame",
+			"click .app-install"  : "installApp"
 		},
 
 		initialize: function() {
@@ -20,14 +21,21 @@ define([
 			window.location.hash = "game/001";
 		},
 
+		installApp: function() {
+			var firefoxInstall = new FirefoxInstall;
+			var manifest = window.location + "/manifest/tabu.webapp";
+
+			firefoxInstall.install(manifest);
+		},
+
 		render: function() {
 			this.$el.empty();
-			if (navigator.mozApps) {
-				var firefoxInstall = new FirefoxInstall;
-				firefoxInstall.install();
-			}
 
 			this.$el.prepend(newGameFormTemplate);
+			
+			if (navigator.mozApps) {
+				this.$el.find(".app-install").show();
+			}
 		}
 	});
 

@@ -75,3 +75,6 @@ body {
   width: 50%;
   float: left;
 }
+.app-install {
+  display: none;
+}
