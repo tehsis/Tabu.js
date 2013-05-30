@@ -1,64 +1,87 @@
-@import "normalize.css";
-@import "variables.less";
+@import "firefoxOs-bootstrap.css";
 
-body {
-  background-color: #000000;
-  color: #FFFFFF;
+html {
+ font-size: 10px; 
 }
 
-#tabu {
-  position: fixed;
-  border: none;
-  top: 5%;
-  left: 5%;
-  height: 90%;
-  width: 90%; 
-  .main-container {
+body {
+  background-color: #FFFFFF;
+}
+
+.next-team {
+  text-align: center;
+}
+
+.ready-button {
+  height: 100px;
+}
+
+.scores {
+  width: 100%;
+  .scores-title {
+    text-align: center;
+  } 
+
+  .score-info {
+    width: 40%;
+    float: left;
+    margin-left: 2rem;
+    text-align: center;
     height: 100%;
-    .next-team {
+    .team-score {
+      display: block;
+      font-size: 10rem;
       text-align: center;
-    }
-    .scores {
-      width: 80%;
-      margin-left: 15%;
-      margin-top: 5%;
-      .team-score {
-        text-align: center;
-        font-size: 8rem;
-      }
-      .score_info {
-        .team-label {
-          border-bottom: 1px solid #FFFFFF;
-        }
-      }
-      .score_a {
-        float: left;
-      }
-      .score_b {
-        float: left;
-        @media (min-width : 296px) { 
-          border-left: 1px solid #FFFFFF;
-        };
-      }
-    }
-    .card {
-      ul {
-        list-style-type: none;
-      }
-      &.not-selected {
-        display: none;
-      }
+      margin-top: 5rem;
     }
   }
-  .button {
-    border: none;
-    border-radius: 20px;
-    font-weight: bold;
-    &.create-game {
-      margin-top: 35%;
-      margin-left: 25%;
-      width: 50%;
-      height: 30%;
+
+}
+
+.timer {
+  .time-container {
+    margin-top: 17px;
+    font-size: 5rem;
+  }
+  text-align: center;
+  color: #FFF;
+  font-size: 2rem;
+  .nav {
+    margin-top: -20px;
+    height: 50px;
+  }
+}
+
+  .card {
+    background: #F8914D;
+    margin-top: -20px;
+    .card-title {
+      display: block;
+      padding-top: 20px;
+      height: 40px;
+      font-size: 2rem;
+      text-align: center;
+      background: #CD6723;
+      font-weight: bold;
     }
+    ul.card-tabues {
+      list-style-type: none;
+      font-size: 5rem;
+      text-align: center;
+      li.tabu {
+        line-height: 1.5;
+      }
+    }
+    &.not-selected {
+      display: none;
+    }
+  }
+
+.buttons {
+  width: 100%;
+  .button {
+  margin-top: -20px;
+    width: 50%;
+    float: left;
   }
 }

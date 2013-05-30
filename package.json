@@ -7,8 +7,6 @@
   },
   "dependencies": {
     "express": "*",
-    "jade": "*",
-    "less-middleware": "*",
-    "mongoose" : "*"
+    "less-middleware": "*"
   }
 }

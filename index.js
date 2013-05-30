@@ -14,12 +14,9 @@ app.get("/manifest/tabu.webapp", function(req, res, next) {
 	next();
 });
 
-app.use("/", function(req, res) {
-    res.render("index");
-}); 
-
-// JSON Responses
+app.get("/", express.static(__dirname + "/views") ); 
 
 app.listen(app.get('port'), function(){
   console.log("Tabu server listening on port " + app.get('port'));
+  console.log(__dirname);
 });

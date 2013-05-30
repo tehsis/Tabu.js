@@ -1,63 +1,77 @@
-@import "normalize.css";
-/* MIXINS */
-.subtle-wood {
-  background-image: url("../img/subtle-wood.gif");
+@import "firefoxOs-bootstrap.css";
+html {
+  font-size: 10px;
 }
 body {
-  background-color: #000000;
-  color: #FFFFFF;
+  background-color: #FFFFFF;
 }
-#tabu {
-  position: fixed;
-  border: none;
-  top: 5%;
-  left: 5%;
-  height: 90%;
-  width: 90%;
+.next-team {
+  text-align: center;
 }
-#tabu .main-container {
+.ready-button {
+  height: 100px;
+}
+.scores {
+  width: 100%;
+}
+.scores .scores-title {
+  text-align: center;
+}
+.scores .score-info {
+  width: 40%;
+  float: left;
+  margin-left: 2rem;
+  text-align: center;
   height: 100%;
 }
-#tabu .main-container .next-team {
+.scores .score-info .team-score {
+  display: block;
+  font-size: 10rem;
   text-align: center;
+  margin-top: 5rem;
 }
-#tabu .main-container .scores {
-  width: 80%;
-  margin-left: 15%;
-  margin-top: 5%;
-}
-#tabu .main-container .scores .team-score {
+.timer {
   text-align: center;
-  font-size: 8rem;
+  color: #FFF;
+  font-size: 2rem;
 }
-#tabu .main-container .scores .score_info .team-label {
-  border-bottom: 1px solid #FFFFFF;
+.timer .time-container {
+  margin-top: 17px;
+  font-size: 5rem;
 }
-#tabu .main-container .scores .score_a {
-  float: left;
+.timer .nav {
+  margin-top: -20px;
+  height: 50px;
 }
-#tabu .main-container .scores .score_b {
-  float: left;
+.card {
+  background: #F8914D;
+  margin-top: -20px;
 }
-@media (min-width: 296px) {
-  #tabu .main-container .scores .score_b {
-    border-left: 1px solid #FFFFFF;
-  }
-}
-#tabu .main-container .card ul {
-  list-style-type: none;
-}
-#tabu .main-container .card.not-selected {
-  display: none;
-}
-#tabu .button {
-  border: none;
-  border-radius: 20px;
+.card .card-title {
+  display: block;
+  padding-top: 20px;
+  height: 40px;
+  font-size: 2rem;
+  text-align: center;
+  background: #CD6723;
   font-weight: bold;
 }
-#tabu .button.create-game {
-  margin-top: 35%;
-  margin-left: 25%;
+.card ul.card-tabues {
+  list-style-type: none;
+  font-size: 5rem;
+  text-align: center;
+}
+.card ul.card-tabues li.tabu {
+  line-height: 1.5;
+}
+.card.not-selected {
+  display: none;
+}
+.buttons {
+  width: 100%;
+}
+.buttons .button {
+  margin-top: -20px;
   width: 50%;
-  height: 30%;
+  float: left;
 }

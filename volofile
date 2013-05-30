@@ -33,7 +33,6 @@ module.exports = {
         run: [
                 "v.rm " + paths.buildDir + "/node_modules",
                 "v.rm " + paths.buildDir + "/controllers",
-                "v.rm " + paths.buildDir + "/views",
                 "v.rm " + paths.buildDir + "/models",
                 "v.rm " + paths.buildDir + "/common.js",
                 "v.rm " + paths.buildDir + "/index.js",
