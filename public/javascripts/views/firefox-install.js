@@ -11,6 +11,10 @@ function() {
 					};
 
 				};
+
+				request.onerror = function() {
+					this.trigger("install-error");
+				}
 			};
 		}
 	});

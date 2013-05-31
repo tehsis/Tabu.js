@@ -1,9 +1,33 @@
 @import "firefoxOs-bootstrap.css";
 html {
-  font-size: 10px;
+  height: 100%;
+  font-size: 5px;
+}
+@media (min-width: 290px) {
+  html {
+    font-size: 8px;
+  }
+}
+h2 {
+  font-size: 3rem;
 }
 body {
   background-color: #FFFFFF;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  height: 60px;
+  margin-bottom: 0;
+}
+#tabu {
+  height: 100%;
+}
+.app-container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
 }
 .next-team {
   text-align: center;
@@ -45,35 +69,68 @@ body {
 }
 .card {
   background: #F8914D;
+  height: 100%;
   margin-top: -20px;
 }
 .card .card-title {
   display: block;
   padding-top: 20px;
   height: 40px;
-  font-size: 2rem;
+  font-size: 4rem;
   text-align: center;
   background: #CD6723;
   font-weight: bold;
 }
 .card ul.card-tabues {
   list-style-type: none;
+  height: 40%;
   font-size: 5rem;
   text-align: center;
 }
+@media (min-height: 481px) {
+  .card ul.card-tabues {
+    margin-top: 20px;
+    height: 60%;
+  }
+}
+@media (min-height: 518px) {
+  .card ul.card-tabues {
+    margin-top: 40px;
+    height: 60%;
+  }
+}
 .card ul.card-tabues li.tabu {
-  line-height: 1.5;
+  display: block;
+  line-height: 1;
+}
+@media (min-height: 481px) {
+  .card ul.card-tabues li.tabu {
+    height: 18%;
+  }
+}
+@media (min-height: 518px) {
+  .card ul.card-tabues li.tabu {
+    height: 20%;
+  }
 }
 .card.not-selected {
   display: none;
 }
 .buttons {
+  position: absolute;
   width: 100%;
+  bottom: 0;
 }
 .buttons .button {
-  margin-top: -20px;
+  margin-top: 0;
   width: 50%;
   float: left;
+}
+.deck-container {
+  height: 100%;
+}
+.main-container {
+  height: 100%;
 }
 .app-install {
   display: none;

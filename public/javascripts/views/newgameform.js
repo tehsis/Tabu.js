@@ -24,15 +24,20 @@ define([
 		installApp: function() {
 			var firefoxInstall = new FirefoxInstall;
 			var manifest = window.location + "/manifest/tabu.webapp";
+			var that = this;
 
 			firefoxInstall.install(manifest);
+
+			firefoxInstall.on("install-error", function() {
+				that.$el.find(".app-install").hide();
+			});
 		},
 
 		render: function() {
 			this.$el.empty();
 
 			this.$el.prepend(newGameFormTemplate);
-			
+
 			if (navigator.mozApps) {
 				this.$el.find(".app-install").show();
 			}

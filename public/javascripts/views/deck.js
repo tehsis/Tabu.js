@@ -7,6 +7,8 @@ define([
 	"javascripts/text!templates/deck.html"
 ], function($, _, Backbonea, Deck, CardView, deckTemplate) {
 	var DeckView = Backbone.View.extend({
+    className: "deck-container",
+
 		events: {
 			"click .button" : "pickCard"
 		},
