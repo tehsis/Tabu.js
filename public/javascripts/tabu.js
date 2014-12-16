@@ -1,5 +1,5 @@
 require.config({
-	baseUrl: ".",
+	baseUrl: "public",
 	paths: {
 		zepto: "javascripts/libs/zepto/zepto",
 		underscore: "javascripts/libs/underscore/underscore",
